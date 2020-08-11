@@ -1,0 +1,12 @@
+var a = 1
+
+function foo() {
+    var a = 2 // function scope
+    {
+        let a = 2 // block scope
+        console.log("Block Scope: " + a)
+    }
+    console.log("Function Scope: " + a)
+}
+foo()
+console.log("Global Scope: " + a)
